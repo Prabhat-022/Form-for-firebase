@@ -1,4 +1,4 @@
-#Contact Form with Data Saving to Firebase Database
+Contact Form with Data Saving to Firebase Database
 
 
 # Getting Started with Create React App
