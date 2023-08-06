@@ -1,0 +1,23 @@
+
+
+Title: "Contact Form with Data Saving to Firebase Database"
+
+Description: This is a React component named "Contact" that represents a contact form 
+for users to submit their information. The form collects the user's name, email, mobile 
+number, address, and a message. The data entered by the user is saved to a Firebase Realtime 
+Database using an asynchronous function called "postData."
+
+How It Works:
+1. The component uses the `useState` hook to initialize a state variable called `user` to store the form data.
+2. As the user enters data in each input field, the `getUserData` function captures the field's name and value
+and updates the `user` state accordingly.
+3. When the "Register" button is clicked, the `postData` function is called.
+4. The function first checks if all the required fields (name, email, mobile, address, and message) are filled out.
+If any field is missing, it displays an alert to prompt the user to fill in all the data.
+5. If all the fields are filled out, the function makes a POST request to the Firebase Realtime Database API to save 
+the user data using the `fetch` function.
+6. Upon successful data saving, the form is reset, and an alert is displayed to inform the user that the data was saved successfully.
+
+Note: The form is styled using CSS classes, and it is designed to have user-friendly input fields with placeholders and 
+validation for required fields. The form data is sent to Firebase using a POST request with JSON data in the request body.
+Demo:https://form-for-firebase.netlify.app/
